@@ -1,11 +1,29 @@
 ﻿// 2024.08.10_Klassnaya_rabota_GITHUB.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string> // для getline
+using namespace std;
+//Строки -string
+// Строки  - это не примитивный тип данных, а который обеспечивает верхнеуровневую работу с текстом
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    string str;
+    // Строки взаимодействую с cin и cout, как же и примитивы
+    cout << "Enter your name: ";
+    cin >> str;
+    cout << "Welcome!";
+    int a, b;
+    cin >> a >> b;
+    cout << a + b;
+
+    string str1, str2;
+    cin >> str1 >> str2;
+    getchar();
+    getline(cin, str1);
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
