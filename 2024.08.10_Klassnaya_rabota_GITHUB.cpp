@@ -10,20 +10,18 @@ using namespace std;
 
 int main()
 {
-    string str;
-    // Строки взаимодействую с cin и cout, как же и примитивы
-    cout << "Enter your name: ";
-    cin >> str;
-    cout << "Welcome!";
-    int a, b;
-    cin >> a >> b;
-    cout << a + b;
-
-    string str1, str2;
-    cin >> str1 >> str2;
-    getchar();
-    getline(cin, str1);
-
+   // Строки это массивы символов, то можно применять индексацию
+	string str;
+	cout << "Enter word: ";
+	cin >> str;
+	cout << str[0] << ' ' << str[2] << ' ' << str[4] << endl;
+	//Можно проиндексироваться по всей строке, но для этого нужно знать ее размер
+	//Для того, чтобы узнать размер строки - используем метод "size"
+	cout << "Length '" << str<< "' =" << str.size() << endl;
+	for(int i = 0; i < str.size(); ++i)
+	{
+		cout<<"[" << i << "]:\t" << endl;
+	}
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
